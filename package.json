@@ -1,0 +1,29 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/auroranorlund/cse341#readme",
+  "bugs": {
+    "url": "https://github.com/auroranorlund/cse341/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auroranorlund/cse341.git"
+  },
+  "license": "ISC",
+  "author": "Aurora Norlund",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
