@@ -1,3 +1,5 @@
 users.txt
 .env
 node_modules
+eslint.config.mjs
+.prettierrc
