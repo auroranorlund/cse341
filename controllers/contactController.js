@@ -2,6 +2,7 @@ const mongodb = require('../data/database')
 const ObjectId = require('mongodb').ObjectId;
 
 const getAll = async (req, res) => {
+  //#swagger.tags=['Contacts']
   const database = mongodb.getDatabase().db('project1');
   const contacts = database.collection('contacts');
   const result = await contacts.find();
@@ -12,6 +13,7 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
+  //#swagger.tags=['Contacts']
   const database = mongodb.getDatabase().db('project1');
   const contacts = database.collection('contacts');
   const contactId = new ObjectId(req.params.id);
@@ -23,6 +25,7 @@ const getSingle = async (req, res) => {
 };
 
 const createContact = async (req, res) => {
+  //#swagger.tags=['Contacts']
   const database = mongodb.getDatabase().db('project1');
   const contacts = database.collection('contacts');
   const contact = {
@@ -42,6 +45,7 @@ const createContact = async (req, res) => {
 }
 
 const updateContact = async (req, res) => {
+  //#swagger.tags=['Contacts']
   const database = mongodb.getDatabase().db('project1');
   const contacts = database.collection('contacts');
   const contactId = new ObjectId(req.params.id)
@@ -62,6 +66,7 @@ const updateContact = async (req, res) => {
 }
 
 const deleteContact = async (req, res) => {
+  //#swagger.tags=['Contacts']
   const database = mongodb.getDatabase().db('project1');
   const contacts = database.collection('contacts');
   const contactId = new ObjectId(req.params.id)

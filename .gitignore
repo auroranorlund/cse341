@@ -3,3 +3,4 @@ users.txt
 node_modules
 eslint.config.mjs
 .prettierrc
+swagger.js
