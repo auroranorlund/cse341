@@ -8,7 +8,6 @@
   "host": "https://cse341-t17z.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
     "https"
   ],
   "paths": {
